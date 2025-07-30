@@ -1,7 +1,7 @@
 import { fail } from "@sveltejs/kit"
 import { sendAdminEmail } from "$lib/mailer.js"
 
-/** @type {import('./$types').Actions} */
+/** @type {import('../../.svelte-kit/types/src/routes').Actions} */
 export const actions = {
   submitContactUs: async ({ request, locals: { supabaseServiceRole } }) => {
     const formData = await request.formData()

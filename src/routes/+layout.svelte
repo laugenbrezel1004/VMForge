@@ -1,8 +1,7 @@
 <script lang="ts">
+  import { WebsiteName } from "../config"
   import "../app.css"
-  import { navigating } from "$app/stores"
-  import { expoOut } from "svelte/easing"
-  import { slide } from "svelte/transition"
+
   interface Props {
     children?: import("svelte").Snippet
   }
@@ -10,17 +9,46 @@
   let { children }: Props = $props()
 </script>
 
-{#if $navigating}
-  <!-- 
-    Loading animation for next page since svelte doesn't show any indicator. 
-     - delay 100ms because most page loads are instant, and we don't want to flash 
-     - long 12s duration because we don't actually know how long it will take
-     - exponential easing so fast loads (>100ms and <1s) still see enough progress,
-       while slow networks see it moving for a full 12 seconds
-  -->
-  <div
-    class="fixed w-full top-0 right-0 left-0 h-1 z-50 bg-primary"
-    in:slide={{ delay: 100, duration: 12000, axis: "x", easing: expoOut }}
-  ></div>
-{/if}
-{@render children?.()}
+<!--<div class="navbar bg-base-100 container accent-blue-400 mx-auto">-->
+<div class="navbar  container accent-blue-400 mx-auto">
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl" href="/static">{WebsiteName}</a>
+  </div>
+  <div class="flex-none">
+  </div>
+</div>
+
+<div class="">
+  {@render children?.()}
+</div>
+
+<!-- Spacer grows so the footer can be at bottom on short pages -->
+<div class="grow"></div>
+<div class="">
+  <div class="border-t max-w-[1000px] mx-auto"></div>
+  <footer
+    class="footer md:footer-horizontal p-10 gap-x-48 lg:gap-x-64 xl:gap-x-96 place-content-center text-base"
+  >
+    <nav>
+      <span class="footer-title opacity-80">Explore</span>
+      <a class="link link-hover mb-1" href="/static">Overview</a>
+      <a class="link link-hover my-1" href="/contact_us">Contact Us</a>
+      <a
+        class="link link-hover my-1"
+        href="https://github.com/CriticalMoments/CMSaasStarter">Github</a
+      >
+    </nav>
+    <aside>
+      <span class="footer-title opacity-80">Sponsor</span>
+      <a class="max-w-[260px]" href="https://getkiln.ai">
+        <div class="font-bold text-3xl mb-1">Kiln AI</div>
+        <div class="font-medium mb-3">Build High Quality AI Products</div>
+        <div class="font-light">
+          Use advanced AI tactics, and collaborate with your team. Free apps for
+          Mac and Windows.
+        </div>
+        <div class="link text-sm font-bold mt-2">Learn More</div>
+      </a>
+    </aside>
+  </footer>
+</div>
