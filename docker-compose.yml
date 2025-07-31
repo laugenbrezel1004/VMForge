@@ -1,0 +1,60 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - proxmox-net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - proxmox-net
+
+  terraform:
+    image: hashicorp/terraform:latest
+    working_dir: /app
+    volumes:
+      - ./terraform:/app
+    entrypoint: ["terraform"]
+    networks:
+      - proxmox-net
+
+  packer:
+    image: hashicorp/packer:latest
+    working_dir: /app
+    volumes:
+      - ./packer:/app
+    entrypoint: ["packer"]
+    networks:
+      - proxmox-net
+
+  cloud-init:
+    image: alpine:latest
+    working_dir: /app
+    volumes:
+      - ./cloud-init:/app
+    entrypoint: ["/bin/sh", "-c", "echo 'cloud-init config running...' && cat /app/user-data"]
+    networks:
+      - proxmox-net
+
+  ansible:
+    image: ansible/ansible:latest
+    working_dir: /app
+    volumes:
+      - ./ansible:/app
+    entrypoint: ["ansible-playbook"]
+    networks:
+      - proxmox-net
+
+networks:
+  proxmox-net:
+    driver: bridge
