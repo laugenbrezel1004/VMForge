@@ -25,8 +25,8 @@ Die Architektur ermöglicht modulare Entwicklung, einfache Skalierung, Reproduzi
 
 | Tool         | Rolle | Container | Reihenfolge |
 |--------------|-------|-----------|-------------|
-| **Terraform**   | Infrastruktur als Code (VMs, Netzwerke, Storage) | `proxmox-terraform` | 1. |
-| **Packer**      | Erstellt VM-Templates (mit Cloud-Init, Docker-Vorinstallation) | `proxmox-packer` | 2. |
+| **Packer**      | Erstellt VM-Templates (mit Cloud-Init, Docker-Vorinstallation) | `proxmox-packer` | 1. |
+| **Terraform**   | Infrastruktur als Code (VMs, Netzwerke, Storage) | `proxmox-terraform` | 2. |
 | **Cloud-Init**  | Konfiguriert VMs nach Deployment (User, SSH, Docker, etc.) | `proxmox-cloud-init` | 3. |
 | **Ansible**     | Post-Provisioning (Software, Docker-Container, Feinjustierung) | `proxmox-ansible` | 4. |
 
