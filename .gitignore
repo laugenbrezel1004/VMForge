@@ -10,3 +10,5 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 target
 bun.lock
+!credentials.auto.tfvars.example
+credentials.auto.tfvars
