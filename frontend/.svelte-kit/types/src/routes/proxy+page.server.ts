@@ -8,27 +8,23 @@ export const actions = {
     const errors: Record<string, string> = {};
 
     // Validation (unchanged from your original)
-    const firstName = formData.get("first_name")?.toString() ?? "";
-    if (firstName.length < 2) errors["first_name"] = "First name is required";
-    else if (firstName.length > 500) errors["first_name"] = "First name too long";
+    const hostname = formData.get("hostname")?.toString() ?? "";
 
-    const lastName = formData.get("last_name")?.toString() ?? "";
-    if (lastName.length < 2) errors["last_name"] = "Last name is required";
-    else if (lastName.length > 500) errors["last_name"] = "Last name too long";
+    const cpu_cores = formData.get("cpu_cores")?.toString() ?? "";
 
-    const email = formData.get("email")?.toString() ?? "";
-    if (email.length < 6) errors["email"] = "Email is required";
-    else if (email.length > 500) errors["email"] = "Email too long";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors["email"] = "Invalid email";
+ //   const email = formData.get("email")?.toString() ?? "";
+ //   if (email.length < 6) errors["email"] = "Email is required";
+ //   else if (email.length > 500) errors["email"] = "Email too long";
+ //   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors["email"] = "Invalid email";
 
-    const company = formData.get("company")?.toString() ?? "";
-    if (company.length > 500) errors["company"] = "Company too long";
-
-    const phone = formData.get("phone")?.toString() ?? "";
-    if (phone.length > 100) errors["phone"] = "Phone number too long";
-
-    const message = formData.get("message")?.toString() ?? "";
-    if (message.length > 2000) errors["message"] = `Message too long (${message.length} of 2000)`;
+//    const company = formData.get("company")?.toString() ?? "";
+//    if (company.length > 500) errors["company"] = "Company too long";
+//
+//    const phone = formData.get("phone")?.toString() ?? "";
+//    if (phone.length > 100) errors["phone"] = "Phone number too long";
+//
+//    const message = formData.get("message")?.toString() ?? "";
+//    if (message.length > 2000) errors["message"] = `Message too long (${message.length} of 2000)`;
 
     if (Object.keys(errors).length > 0) {
       return fail(400, { errors });
@@ -36,18 +32,18 @@ export const actions = {
 
     // Send to Rocket backend
     try {
-      const response = await fetch("http://localhost:8000/api/contact", {
+      const response = await fetch("http://localhost:8000/api/buildvm", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          first_name: firstName,
-          last_name: lastName,
-          email,
-          company_name: company || null,
-          phone: phone || null,
-          message_body: message || null,
+          hostname: hostname,
+          cpu_cores: cpu_cores,
+       //   email,
+         // company_name: company || null,
+         // phone: phone || null,
+         // message_body: message || null,
         }),
       });
 

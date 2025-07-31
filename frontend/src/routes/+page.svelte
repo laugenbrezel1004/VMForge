@@ -18,44 +18,44 @@
 
   const formFields: FormField[] = [
     {
-      id: "first_name",
-      label: "First Name *",
+      id: "hostname",
+      label: "Hostname *",
       inputType: "text",
       autocomplete: "given-name",
       required: true
     },
     {
-      id: "last_name",
-      label: "Last Name *",
-      inputType: "text",
+      id: "cpu_cores",
+      label: "CPU-Cores *",
+      inputType: "number",
       autocomplete: "family-name",
       required: true
     },
-    {
-      id: "email",
-      label: "Email *",
-      inputType: "email",
-      autocomplete: "email",
-      required: true
-    },
-    {
-      id: "phone",
-      label: "Phone Number",
-      inputType: "tel",
-      autocomplete: "tel"
-    },
-    {
-      id: "company",
-      label: "Company Name",
-      inputType: "text",
-      autocomplete: "organization"
-    },
-    {
-      id: "message",
-      label: "Message",
-      inputType: "textarea",
-      autocomplete: "off"
-    }
+  //  {
+  //    id: "email",
+  //    label: "Email *",
+  //    inputType: "email",
+  //    autocomplete: "email",
+  //    required: true
+  //  },
+  //  {
+  //    id: "phone",
+  //    label: "Phone Number",
+  //    inputType: "tel",
+  //    autocomplete: "tel"
+  //  },
+  //  {
+  //    id: "company",
+  //    label: "Company Name",
+  //    inputType: "text",
+  //    autocomplete: "organization"
+  //  },
+  //  {
+  //    id: "message",
+  //    label: "Message",
+  //    inputType: "textarea",
+  //    autocomplete: "off"
+  //  }
   ]
 
   const handleSubmit: SubmitFunction = ({ form }) => {

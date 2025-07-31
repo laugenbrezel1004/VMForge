@@ -6,40 +6,24 @@ use rocket::outcome::Outcome;
 
 #[derive(Debug, Deserialize, Serialize)]
 #[serde(crate = "rocket::serde")]
-pub struct ContactForm {
-    first_name: String,
-    last_name: String,
-    email: String,
-    company_name: Option<String>,
-    phone: Option<String>,
-    message_body: Option<String>,
+pub struct Data {
+    hostname: String,
+    cpu_cores: String,
+    //email: String,
+    //company_name: Option<String>,
+    //phone: Option<String>,
+    //message_body: Option<String>,
 }
 
-#[post("/api/contact", format = "json", data = "<form>")]
-fn submit_contact(form: Json<ContactForm>) -> Status {
+#[post("/api/buildvm", format = "json", data = "<form>")]
+fn buildvm(form: Json<Data>) -> Status {
     println!("Received contact form: {:?}", form);
     // Hier könnten Sie die Daten in einer Datenbank speichern
     Status::Ok
 }
 
-#[get("/api")]
-fn index() -> &'static str {
-    "Hello, world!"
-}
-
-#[get("/")]
-fn hello() -> &'static str {
-    "test"
-}
-
-#[get("/delay/<seconds>")]
-async fn delay(seconds: u64) -> String {
-    rocket::tokio::time::sleep(std::time::Duration::from_secs(seconds)).await;
-    format!("Waited for {} seconds", seconds)
-}
-
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-        .mount("/", routes![index, hello, delay, submit_contact])
+        .mount("/", routes![buildvm])
 }
