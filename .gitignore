@@ -10,5 +10,14 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 target
 bun.lock
+
+
+
+# Terraform / Packer
 !credentials.auto.tfvars.example
-credentials.auto.tfvar
+credentials.auto.tfvars
+.terraform*
+
+
+# Rust
+target/

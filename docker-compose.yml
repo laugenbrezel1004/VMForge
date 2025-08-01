@@ -23,8 +23,8 @@ services:
     image: hashicorp/terraform:latest
     working_dir: /app
     volumes:
-      - ./terraform:/app
-    entrypoint: ["terraform"]
+      - ./infrastucture:/app
+    entrypoint: ["infrastucture"]
     networks:
       - proxmox-net
 
