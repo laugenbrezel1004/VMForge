@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58d7877f-561e-45a2-b1e3-8f373ac338e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/terraform.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend_formular.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/techstack.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.eslintrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/bun.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/checks.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/hooks.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/build_index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/emails/welcome_email_html.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/emails/welcome_email_text.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/load_helpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/mailer.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/lib/mailer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/routes/+error.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/routes/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/routes/+page.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/routes/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/static/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/static/images/cm_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/static/images/example-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/static/images/rss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/static/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/svelte.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastucture/credentials.auto.tfvars.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastucture/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastucture/proxmox-cloudinit.pkr.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastucture/terraform.tfstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastucture/user-data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastucture/vmtest.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VMForge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checks.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/build_index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/emails/welcome_email_html.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/emails/welcome_email_text.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/load_helpers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mailer.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mailer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+error.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/cm_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/example-home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/rss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="Variables File" />
+        <option value="Empty File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="FKOu8j65" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="30bTfUBYHJo2IkLexsxxATjzE1d" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.+page.server.ts.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "/home/laurenz/projects/VMForge",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "prettierjs.PrettierConfiguration.Package": "/home/laurenz/projects/VMForge/frontend/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/laurenz/projects/VMForge/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/infrastucture" />
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/src/routes" />
+    </key>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="/usr/bin" />
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.27812.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58d7877f-561e-45a2-b1e3-8f373ac338e0" name="Changes" comment="" />
+      <created>1753895375545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753895375545</updated>
+      <workItem from="1753895376613" duration="1374000" />
+      <workItem from="1753970985792" duration="3114000" />
+      <workItem from="1753974207692" duration="7208000" />
+      <workItem from="1754050071339" duration="6159000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/routes/+page.server.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
