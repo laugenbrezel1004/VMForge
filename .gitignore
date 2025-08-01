@@ -11,4 +11,4 @@ vite.config.ts.timestamp-*
 target
 bun.lock
 !credentials.auto.tfvars.example
-terraform/credentials.auto.tfvars
+credentials.auto.tfvar
